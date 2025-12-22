@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="50dp"
+    android:background="@color/stylebg"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name:"
+        android:background="@drawable/edit_text_design"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/register_icon"
+        android:drawablePadding="12dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/right_side_arrow"
+        android:text="Register"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

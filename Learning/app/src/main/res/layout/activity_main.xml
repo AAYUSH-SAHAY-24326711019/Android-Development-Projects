@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/stylebg"
+    android:gravity="center">
 
-    <TextView
+
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Aayush"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Appcompat Button"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/register_btn_design"
+        android:textColor="#fff"
+        android:id="@+id/appCbtn"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appcompat Button"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/orangebg"
+        android:textColor="#fff"
+        android:id="@+id/appCbtn"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/layout_design"/>
+
+</LinearLayout>
