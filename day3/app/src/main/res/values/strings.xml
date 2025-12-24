@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FormDemo</string>
+    <string-array name="cities">
+        <item>Select your class Branch</item>
+        <item>Patliputra Branch</item>
+        <item>New Building</item>
+        <item>Sk Puri Branch</item>
+        <item>VivekaNand Branch</item>
+
+    </string-array>
+</resources>

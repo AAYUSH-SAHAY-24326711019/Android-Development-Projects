@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyForm"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="My Form"/>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textColorHint="#000"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textColorHint="#000"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone no."
+        android:textColorHint="#000"
+        android:inputType="phone"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/rb_male"
+            android:textSize="12sp"
+            android:checked="false"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rb_female"
+            android:textSize="12sp"
+            android:checked="false"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your interested languages:"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_android"
+        android:text="Android"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_java"
+        android:text="Java"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_python"
+        android:text="Python"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_cities"
+        android:entries="@array/cities"
+        android:padding="12dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click ME"
+        android:onClick="getAllValues"/>
+
+
+</LinearLayout>
