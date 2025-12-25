@@ -5,21 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpinnerDemo"
+    tools:context=".TimePickerDemoTwo"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20px">
+    android:gravity="center">
 
-    <Spinner
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/cities"
-        android:padding="10dp"
-        android:background="@drawable/spinner_design"
-        android:theme="@style/city_spinner"
-        android:popupBackground="@drawable/spinner_design">
-
-
-    </Spinner>
+        android:hint="Select Time"
+        android:id="@+id/tv_time"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="15dp"/>
 
 </LinearLayout>

@@ -5,21 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpinnerDemo"
+    tools:context=".ImgBtnDemo"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20px">
+    android:gravity="center">
 
-    <Spinner
-        android:layout_width="match_parent"
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/cities"
+        android:background="@drawable/imgbtn_design"
+        android:src="@drawable/home_work"
+        android:padding="10dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nature"
         android:padding="10dp"
-        android:background="@drawable/spinner_design"
-        android:theme="@style/city_spinner"
-        android:popupBackground="@drawable/spinner_design">
+        android:scaleType="fitXY"/>
 
-
-    </Spinner>
 
 </LinearLayout>
